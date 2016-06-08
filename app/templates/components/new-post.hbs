@@ -1,24 +1,49 @@
-<h3>Add a New Blog Post</h3>
+<h2>Add a New Blog Post</h2>
 
 <form>
   <div class="form-group">
-    <label for="title">Post Title:</label>
-    {{input value=title id="title"}}
+    <div class="row">
+      <div class="col-xs-6">
+        <label class="new-post-field" for="title">Post Title:</label>
+      </div>
+
+      <div class="col-xs-6">
+        {{input class="new-post-field" value=title id="title"}}
+      </div>
+    </div>
   </div>
 
   <div class="form-group">
-    <label for="day">Day Number:</label>
-    {{input value=day id="day"}}
+    <div class="row">
+      <div class="col-xs-6">
+        <label class="new-post-field" for="day">Day Number:</label>
+      </div>
+
+      <div class="col-xs-6">
+        {{input class="new-post-field" value=day id="day"}}
+      </div>
+    </div>
   </div>
 
   <div class="form-group">
-    <label for="image">Image URL:</label>
-    {{input value=image id="image"}}
+    <div class="row">
+      <div class="col-xs-6">
+        <label class="new-post-field" for="image">Image URL:</label>
+      </div>
+
+      <div class="col-xs-6">
+        {{input class="new-post-field" value=image id="image"}}
+      </div>
+    </div>
   </div>
 
   <div class="form-group">
-    <label for="body">Write Blog Post Here:</label>
-    {{textarea value=body id="body"}}
+    <div class="row">
+        <label class="new-post-field" for="body">Write Blog Post Here:</label>
+        <br>
+        {{textarea class="new-post-body" value=body id="body"}}
+    </div>
   </div>
+
   <button {{action 'savePost'}}>Post to Blog</button>
 </form>

@@ -1,5 +1,9 @@
-{{#each model as |post|}}
-  {{post-tile post=post}}
-{{/each}}
+<div class="row">
+  {{#each model as |post|}}
+    {{post-tile post=post}}
+  {{/each}}
+</div>
 
-{{new-post savePost="savePost"}}
+<div class="new-post-box">
+  {{new-post savePost="savePost"}}
+</div>

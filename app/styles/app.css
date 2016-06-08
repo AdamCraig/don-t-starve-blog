@@ -1,6 +1,8 @@
+body {
+  font-family: 'Chelsea Market', sans-serif;
+}
 footer {
   text-align: center;
-  position: absolute;
   bottom: 20px;
 }
 
@@ -11,7 +13,30 @@ footer {
 
 .post-tile-box {
   text-align: center;
-  max-height: 333px;
+  max-height: 360px;
   overflow: hidden;
-  border: solid black 2px;
+  padding: 10px;
+  border: solid black 5px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.new-post-box {
+  text-align: center;
+  padding: 15px;
+  border: solid grey 5px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.new-post-body {
+  font-size: 18pt;
+  width: 700px;
+  height: 200px;
+}
+
+.new-post-field {
+  font-size: 18pt;
+  width: 400px;
+  height: 40px;
 }
