@@ -1,0 +1,24 @@
+<h3>Add a New Blog Post</h3>
+
+<form>
+  <div class="form-group">
+    <label for="title">Post Title:</label>
+    {{input value=title id="title"}}
+  </div>
+
+  <div class="form-group">
+    <label for="day">Day Number:</label>
+    {{input value=day id="day"}}
+  </div>
+
+  <div class="form-group">
+    <label for="image">Image URL:</label>
+    {{input value=image id="image"}}
+  </div>
+
+  <div class="form-group">
+    <label for="body">Write Blog Post Here:</label>
+    {{textarea value=body id="body"}}
+  </div>
+  <button {{action 'savePost'}}>Post to Blog</button>
+</form>
