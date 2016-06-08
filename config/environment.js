@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'dont-starve-blog',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://dont-starve-blog.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
