@@ -1,9 +1,37 @@
 body {
   font-family: 'Chelsea Market', sans-serif;
+  background-image: url(/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-footer {
+
+.title {
   text-align: center;
-  bottom: 20px;
+  font-size: 50pt;
+  color: #9F5F9F;
+}
+
+.navbar {
+  text-align: center;
+  font-size: 20pt;
+  color: white;
+}
+
+a {
+  color: #9F5F9F;
+}
+
+a:hover {
+  color: black;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #9F5F9F;
+  text-decoration: none;
 }
 
 .post-image {
@@ -19,6 +47,12 @@ footer {
   border: solid black 5px;
   border-radius: 10px;
   margin-top: 20px;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.post-tile-box:hover {
+  opacity: 1;
 }
 
 .new-post-box {
@@ -27,6 +61,13 @@ footer {
   border: solid grey 5px;
   margin-top: 20px;
   border-radius: 10px;
+  margin-bottom: 40px;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.new-post-box:hover {
+  opacity: 1;
 }
 
 .new-post-body {
@@ -39,4 +80,9 @@ footer {
   font-size: 18pt;
   width: 400px;
   height: 40px;
+}
+
+.credits {
+  color: white;
+  text-align: center;
 }

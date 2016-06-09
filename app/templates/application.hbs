@@ -1,15 +1,19 @@
 <div class="container">
   <header>
-    <h1>Wilson's Don't Starve Adventures</h1>
+    <h1 class="title">Wilson's Don't Starve Adventures</h1>
+    <hr>
+    <div class="navbar">
+      {{#link-to 'index'}}Back To Home{{/link-to}} |
+      {{#link-to 'contact'}}Contact Wilson{{/link-to}} |
+      {{#link-to 'about'}}About This Blog{{/link-to}} |
+      <a href="http://dont-starve-game.wikia.com/wiki/Don%27t_Starve_Wiki">Don't Starve Wiki</a>
+    </div>
   </header>
-  <hr>
 
   {{outlet}}
 
-  <footer>
-    <hr>
-    {{#link-to 'index'}}Back To Home{{/link-to}} |
-    {{#link-to 'contact'}}Contact Wilson{{/link-to}} |
-    {{#link-to 'about'}}About This Blog{{/link-to}}
+  <footer class="credits">
+    <p>Ember web app created by <a href="http://github.com/adamcraig">Adam Craig</a> and <a href="http://github.com/ashleyraymaceli">Ashley Maceli</a>. Don't Starve belongs to Klei Entertainment, not us.</p>
   </footer>
+
 </div>

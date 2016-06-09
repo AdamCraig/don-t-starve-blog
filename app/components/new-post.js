@@ -10,6 +10,10 @@ export default Ember.Component.extend({
         body: this.get('body'),
       };
       this.sendAction('savePost', params);
+      this.set('title', "");
+      this.set('day', "");
+      this.set('image', "");
+      this.set('body', "");
     }
   }
 });
