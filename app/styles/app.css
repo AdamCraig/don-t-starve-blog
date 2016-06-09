@@ -169,6 +169,10 @@ a:hover {
   width: 160px;
 }
 
+.selected-avatar {
+  border: solid red 10px;
+}
+
 .delete-comment {
   margin-top: 10px;
   font-size: 20pt;

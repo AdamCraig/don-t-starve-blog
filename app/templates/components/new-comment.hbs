@@ -1,28 +1,33 @@
 <div class="new-post-box">
   <h2>Add a Comment</h2>
+  <hr>
 
   <form>
     <div class="form-group">
       <div class="row">
-        <div class="col-xs-6">
-          <label class="new-post-field" for="name">Your Name:</label>
-        </div>
+        <label class="new-post-field" for="image">Choose Your Character:</label>
 
-        <div class="col-xs-6">
-          {{input class="new-post-field" value=name id="name"}}
-        </div>
+      <div class="col-xs-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNJqLjv6JvtTLuWXqgLWnAFNji6nWEky3bfsy2gGWUwky6vSa6Jg" {{action 'pickWebber'}} class="avatar-choice" id="pickWebber">
+        <p>Webber</p>
       </div>
-    </div>
 
-    <div class="form-group">
-      <div class="row">
-        <div class="col-xs-6">
-          <label class="new-post-field" for="image">Avatar URL:</label>
-        </div>
+      <div class="col-xs-3">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-AHgm1nwh0HefYSiO4UW2RKwzg5YFHAAX_rFmWcg49M1PBYOrjA" {{action 'pickWendy'}} class="avatar-choice" id="pickWendy">
+        <p>Wendy</p>
+      </div>
 
-        <div class="col-xs-6">
-          {{input class="new-post-field" value=image id="image"}}
-        </div>
+      <div class="col-xs-3">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdRdu7bZA6nbIstLYcSQ1fKgdnsDiWNjNno9Gamv61aEAiX0gi" {{action 'pickWX'}} class="avatar-choice" id="pickWX">
+        <p>WX-78</p>
+      </div>
+
+      <div class="col-xs-3">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo2zeP6I060pnUSTcaleUadffTtoEHcefQNUsY2P4l39y-Z_YiQg" {{action 'pickWillow'}} class="avatar-choice" id="pickWillow">
+        <p>Willow</p>
+      </div>
+
+
       </div>
     </div>
 
