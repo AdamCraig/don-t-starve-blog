@@ -9,6 +9,9 @@ export default Ember.Component.extend({
     },
     updatePost(post, params) {
       this.sendAction('updatePost', post, params);
+    },
+    saveComment(comment, params) {
+      this.sendAction('saveComment', comment, params);
     }
   }
 });

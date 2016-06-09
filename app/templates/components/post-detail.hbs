@@ -6,3 +6,11 @@
 <button {{action 'deletePost' post}}>Delete This Post</button>
 
 {{update-post post=post updatePost="updatePost"}}
+
+<h2>Comments on This Post</h2>
+
+{{#each post.comments as |comment|}}
+  {{comment-tile comment=comment}}
+{{/each}}
+
+{{new-comment saveComment="saveComment" post=post}}
