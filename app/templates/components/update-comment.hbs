@@ -1,5 +1,5 @@
 {{#if updateCommentForm}}
-<h2>Add a Comment</h2>
+<h2>Update This Comment:</h2>
 
 <form>
   <div class="form-group">
@@ -9,7 +9,7 @@
       </div>
 
       <div class="col-xs-6">
-        {{input class="new-post-field" value=name id="name"}}
+        {{input class="new-post-field" value=name id="name" placeholder=comment.name}}
       </div>
     </div>
   </div>
@@ -21,7 +21,7 @@
       </div>
 
       <div class="col-xs-6">
-        {{input class="new-post-field" value=image id="image"}}
+        {{input class="new-post-field" value=image id="image" placeholder=comment.image}}
       </div>
     </div>
   </div>
@@ -30,12 +30,12 @@
     <div class="row">
         <label class="new-post-field" for="message">Message:</label>
         <br>
-        {{textarea class="new-post-body" value=message id="message"}}
+        {{textarea class="new-post-body" value=message id="message" placeholder=comment.message}}
     </div>
   </div>
 
-  <button {{action 'saveComment'}}>Post Comment</button>
+  <button {{action 'updateComment' comment}}>Save Changes</button>
 </form>
 {{else}}
-
+  <button {{action 'updateCommentForm'}}>Update Comment</button>
 {{/if}}

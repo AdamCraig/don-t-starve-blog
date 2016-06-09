@@ -3,5 +3,8 @@
 {{comment.name}}'s post on "{{comment.post.title}}"
 <br>
 {{comment.message}}
+<br>
+
+{{update-comment comment=comment updateComment="updateComment"}}
 
 <button {{action 'deleteComment' comment}}>Delete Comment</button>

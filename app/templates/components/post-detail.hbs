@@ -10,7 +10,7 @@
 <h2>Comments on This Post</h2>
 
 {{#each post.comments as |comment|}}
-  {{comment-tile comment=comment deleteComment="deleteComment"}}
+  {{comment-tile comment=comment deleteComment="deleteComment" updateComment="updateComment"}}
 {{/each}}
 
 {{new-comment saveComment="saveComment" post=post}}
