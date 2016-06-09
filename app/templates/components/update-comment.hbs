@@ -9,7 +9,7 @@
       </div>
 
       <div class="col-xs-6">
-        {{input class="new-post-field" value=name id="name" placeholder=comment.name}}
+        {{input class="new-post-field" value=name id="author" placeholder=comment.name}}
       </div>
     </div>
   </div>
@@ -34,8 +34,8 @@
     </div>
   </div>
 
-  <button {{action 'updateComment' comment}}>Save Changes</button>
+  <button class="update-comment" {{action 'updateComment' comment}}>Save Changes</button>
 </form>
 {{else}}
-  <button {{action 'updateCommentForm'}}>Update Comment</button>
+  <button class="update-comment" {{action 'updateCommentForm'}}>Update Comment</button>
 {{/if}}

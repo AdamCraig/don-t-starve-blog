@@ -19,18 +19,22 @@
 
 </div>
 
-<h2>Comments on This Post</h2>
+<div class="all-comments-box">
+  <h2>Comments on This Post</h2>
 
-{{#if post.comments}}
+  {{#if post.comments}}
 
-{{#each post.comments as |comment|}}
-  {{comment-tile comment=comment deleteComment="deleteComment" updateComment="updateComment"}}
-{{/each}}
+  {{#each post.comments as |comment|}}
+    <div class="single-comment">
+        {{comment-tile comment=comment deleteComment="deleteComment" updateComment="updateComment"}}
+    </div>
+  {{/each}}
 
-{{else}}
+  {{else}}
 
-<p>No comments posted yet. Add one below!</p>
+  <p>No comments posted yet. Add one below!</p>
 
-{{/if}}
+  {{/if}}
+</div>
 
 {{new-comment saveComment="saveComment" post=post}}

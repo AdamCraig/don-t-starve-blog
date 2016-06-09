@@ -135,8 +135,64 @@ a:hover {
 
 .new-post-field {
   font-size: 18pt;
-  width: 400px;
+  width: 100%;
   height: 40px;
+}
+
+/*comments box*/
+
+.all-comments-box {
+  background-color: white;
+  opacity: 0.95;
+  border: solid grey 5px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.single-comment {
+  border: solid black 5px;
+  border-radius: 10px;
+  max-width: 100%;
+  padding: 10px;
+  padding-top: 30px;
+  margin: 10px;
+  background-color: grey;
+  font-size: 16pt;
+  color: black;
+}
+
+.comment-avatar {
+  border: solid black 2px;
+  border-radius: 50%;
+  height: 200px;
+  width: 160px;
+}
+
+.delete-comment {
+  margin-top: 10px;
+  font-size: 20pt;
+  border-radius: 10px;
+  background-color: #b20000;
+  color: white;
+  border: inset #660000;
+}
+
+.delete-comment:hover {
+  opacity: 0.7;
+}
+
+.update-comment {
+  margin-top: 20px;
+  font-size: 20pt;
+  border-radius: 10px;
+  background-color: #9F5F9F;
+  color: white;
+  border: inset #492C49;
+}
+
+.update-comment:hover {
+  opacity: 0.7;
 }
 
 .credits {
