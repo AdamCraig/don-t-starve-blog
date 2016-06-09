@@ -221,3 +221,7 @@ a:hover {
   text-decoration: none;
   color: #b20000;
 }
+
+.static-page {
+  font-size: 24pt;
+}
