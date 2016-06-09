@@ -117,6 +117,10 @@ a:hover {
   opacity: 0.8;
 }
 
+.avatar-selection-box {
+  min-height: 820px;
+}
+
 .new-post-box:hover {
   opacity: 1;
 }
@@ -137,6 +141,13 @@ a:hover {
   font-size: 18pt;
   width: 100%;
   height: 40px;
+}
+
+.post-button {
+  background-color: black;
+  color: white;
+  font-size: 20pt;
+  border-radius: 10px;
 }
 
 /*comments box*/
@@ -170,7 +181,8 @@ a:hover {
 }
 
 .selected-avatar {
-  border: solid red 10px;
+  border: dotted #9F5F9F 5px;
+  border-radius: 50%;
 }
 
 .delete-comment {
@@ -203,4 +215,9 @@ a:hover {
   margin-top: 20px;
   color: white;
   text-align: center;
+}
+
+.credits a:hover {
+  text-decoration: none;
+  color: #b20000;
 }
