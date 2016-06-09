@@ -1,41 +1,39 @@
-{{#if updateCommentForm}}
-<h2>Add a Comment</h2>
+<div class="new-post-box">
+  <h2>Add a Comment</h2>
 
-<form>
-  <div class="form-group">
-    <div class="row">
-      <div class="col-xs-6">
-        <label class="new-post-field" for="name">Your Name:</label>
-      </div>
+  <form>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label class="new-post-field" for="name">Your Name:</label>
+        </div>
 
-      <div class="col-xs-6">
-        {{input class="new-post-field" value=name id="name"}}
-      </div>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <div class="row">
-      <div class="col-xs-6">
-        <label class="new-post-field" for="image">Avatar URL:</label>
-      </div>
-
-      <div class="col-xs-6">
-        {{input class="new-post-field" value=image id="image"}}
+        <div class="col-xs-6">
+          {{input class="new-post-field" value=name id="name"}}
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <div class="row">
-        <label class="new-post-field" for="message">Message:</label>
-        <br>
-        {{textarea class="new-post-body" value=message id="message"}}
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label class="new-post-field" for="image">Avatar URL:</label>
+        </div>
+
+        <div class="col-xs-6">
+          {{input class="new-post-field" value=image id="image"}}
+        </div>
+      </div>
     </div>
-  </div>
 
-  <button {{action 'saveComment'}}>Post Comment</button>
-</form>
-{{else}}
+    <div class="form-group">
+      <div class="row">
+          <label class="new-post-field" for="message">Message:</label>
+          <br>
+          {{textarea class="new-post-body" value=message id="message"}}
+      </div>
+    </div>
 
-{{/if}}
+    <button {{action 'saveComment'}}>Post Comment</button>
+  </form>
+</div>

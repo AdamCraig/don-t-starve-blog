@@ -1,28 +1,61 @@
 {{#if updatePostForm}}
-<h3>Update This Post</h3>
+<div class="new-post-box">
+  <h3>Update This Post</h3>
 
-<form>
-  <div class="form-group">
-    <label for="title">Post Title:</label>
-    {{input value=title id="title" placeholder=post.title}}
-  </div>
+  <form>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label class="new-post-field" for="title">Post Title:</label>
+        </div>
+        <div class="col-xs-6">
+          {{input class="new-post-field" value=title id="title" placeholder=post.title}}
+        </div>
+      </div>
+    </div>
 
-  <div class="form-group">
-    <label for="day">Day Number:</label>
-    {{input value=day id="day" placeholder=post.day}}
-  </div>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label class="new-post-field" for="day">Day Number:</label>
+        </div>
+        <div class="col-xs-6">
+          {{input class="new-post-field" value=day id="day" placeholder=post.day}}
+        </div>
+      </div>
+    </div>
 
-  <div class="form-group">
-    <label for="image">Image URL:</label>
-    {{input value=image id="image" placeholder=post.image}}
-  </div>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label class="new-post-field" for="image">Image URL:</label>
+        </div>
+        <div class="col-xs-6">
+          {{input class="new-post-field" value=image id="image" placeholder=post.image}}
+        </div>
+      </div>
+    </div>
 
-  <div class="form-group">
-    <label for="body">Write Blog Post Here:</label>
-    {{textarea value=body id="body" placeholder=post.body}}
-  </div>
-  <button {{action 'updatePost' post}}>Save</button>
-</form>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label class="new-post-field" for="image">Write Blog Post Here:</label>
+        </div>
+        <div class="col-xs-6">
+          {{textarea class="update-post-body" value=body id="body" placeholder=post.body}}
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+
+
+
+
+
+</div>
+
 {{else}}
-  <button {{action 'updatePostForm'}}>Update This Post</button>
+  <button {{action 'updatePostForm'}} class="update-button">Update This Post</button>
 {{/if}}

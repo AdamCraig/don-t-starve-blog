@@ -1,16 +1,36 @@
-<img src={{post.image}}>
-<h1>{{post.title}}</h1>
-<h2>{{post.day}}</h2>
-<p>{{post.body}}</p>
+<div class="row">
+  <div class="col-xs-4 detail-image-box">
+    <img class="detail-image" src={{post.image}}>
+  </div>
 
-<button {{action 'deletePost' post}}>Delete This Post</button>
+  <div class="col-xs-8 detail-content">
+    <h1>{{post.title}}</h1>
+    <h2>{{post.day}}</h2>
+    <p class="detail-body">{{post.body}}</p>
+  </div>
 
-{{update-post post=post updatePost="updatePost"}}
+</div>
+
+<div class="modify-buttons">
+
+  {{update-post post=post updatePost="updatePost"}}
+
+  <button {{action 'deletePost' post}} class="delete-button">Delete This Post</button>
+
+</div>
 
 <h2>Comments on This Post</h2>
+
+{{#if post.comments}}
 
 {{#each post.comments as |comment|}}
   {{comment-tile comment=comment deleteComment="deleteComment" updateComment="updateComment"}}
 {{/each}}
+
+{{else}}
+
+<p>No comments posted yet. Add one below!</p>
+
+{{/if}}
 
 {{new-comment saveComment="saveComment" post=post}}

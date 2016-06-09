@@ -3,6 +3,7 @@ body {
   background-image: url(/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
 }
 
 .title {
@@ -37,6 +38,56 @@ a:hover {
 .post-image {
   height: 200px;
   width: 141px;
+}
+
+.detail-image {
+  max-height: 450px;
+  width: 320px;
+}
+
+.detail-image-box {
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  border: solid grey 5px;
+  border-radius: 10px;
+}
+
+.detail-content {
+  color: white;
+}
+
+.detail-body {
+  font-size: 14pt;
+}
+
+.modify-buttons {
+  text-align: center;
+}
+
+.delete-button {
+  margin-top: 10px;
+  font-size: 30pt;
+  border-radius: 10px;
+  background-color: #b20000;
+  color: white;
+  border: inset #660000;
+}
+
+.delete-button:hover {
+  opacity: 0.6;
+}
+
+.update-button:hover {
+  opacity: 0.6;
+}
+
+.update-button {
+  font-size: 30pt;
+  border-radius: 10px;
+  background-color: #9F5F9F;
+  color: white;
+  border: inset #492C49;
 }
 
 .post-tile-box {
@@ -76,6 +127,12 @@ a:hover {
   height: 200px;
 }
 
+.update-post-body {
+  font-size: 18pt;
+  width: 100%;
+  height: 200px;
+}
+
 .new-post-field {
   font-size: 18pt;
   width: 400px;
@@ -83,6 +140,7 @@ a:hover {
 }
 
 .credits {
+  margin-top: 20px;
   color: white;
   text-align: center;
 }
